@@ -30,6 +30,7 @@
     "@ckeditor/ckeditor5-core": "^18.0.0",
     "@ckeditor/ckeditor5-engine": "^18.0.0",
     "@ckeditor/ckeditor5-image": "^18.0.0",
+    "@ckeditor/ckeditor5-indent": "^18.0.0",
     "@ckeditor/ckeditor5-ui": "^18.0.0",
     "@ckeditor/ckeditor5-utils": "^18.0.0",
     "@ckeditor/ckeditor5-widget": "^18.0.0"

@@ -21,6 +21,9 @@ import ImageResize from "@ckeditor/ckeditor5-image/src/imageresize";
 import WidgetResize from "@ckeditor/ckeditor5-widget/src/widgetresize";
 import Widget from "@ckeditor/ckeditor5-widget/src/widget";
 import MediaResizeEditing from "../src/mediaresize/mediaresizeediting";
+import Indent from "@ckeditor/ckeditor5-indent/src/indent";
+import IndentBlock from "@ckeditor/ckeditor5-indent/src/indentblock";
+import TodoList from "@ckeditor/ckeditor5-list/src/todolist";
 
 export default class Editor extends EditorBase {
 }
@@ -45,6 +48,9 @@ Editor.builtinPlugins = [
     Widget,
     WidgetResize,
     MediaResizeEditing,
+    Indent,
+    IndentBlock,
+    TodoList,
 ];
 Editor.defaultConfig = {
     // heading: {
@@ -78,18 +84,28 @@ Editor.defaultConfig = {
     },
     toolbar: {
         items: [
-            'undo',
-            'redo',
+            'heading',
+            '|',
             'bold',
             'italic',
             'link',
-            'heading',
             'bulletedList',
             'numberedList',
+            'todoList',
+            '|',
+            'indent',
+            'outdent',
+            '|',
             'blockQuote',
+            'insertTable',
             'mediaBrowser',
             'imageBrowser',
-            'insertTable',
+            '|',
+
+
+
+            'undo',
+            'redo',
         ]
     }
 };
