@@ -3,7 +3,8 @@
 .ck-content figure.image figcaption,
 .ck-content figure.video figcaption {
     padding: 0.5em;
-    font-size: 0.875rem;
+    font-size: 15px;
+    font-weight: bold;
     color: #333;
     background: #f7f7f7;
     outline-offset: -0.0625rem;

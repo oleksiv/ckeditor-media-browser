@@ -6,6 +6,7 @@ import MediaTextAlternative from './mediatextalternative';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import Widget from '@ckeditor/ckeditor5-widget/src/widget';
 import '../theme/media.css';
+import '../theme/main.css';
 
 /**
  * Media Plugin
