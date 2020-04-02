@@ -17,10 +17,13 @@ export default class MediaBrowserCommand extends Command {
     execute() {
         const editor = this.editor;
         const editorDoc = editor.sourceElement.ownerDocument;
-        const editorWin = editorDoc.defaultView;
         const apiKey = editor.config.get('fileStackApiKey');
+        const uploadPath = editor.config.get('uploadPath');
         if (!apiKey) {
-            throw 'fileStackApiKey is not defined in editor config';
+            console.error('fileStackApiKey is not defined in editor config');
+        }
+        if (!uploadPath) {
+            console.error('uploadPath is not defined in editor config');
         }
         const client = filestack.init(apiKey);
 
@@ -41,6 +44,10 @@ export default class MediaBrowserCommand extends Command {
                     }), editor.model.document.selection);
                 },
                 fromSources: ['local_file_system'],
+                // storeTo: {
+                //     location: 's3',
+                //     path: uploadPath,
+                // }
                 // accept: ['video/*'],
             };
 

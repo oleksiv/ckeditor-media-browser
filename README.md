@@ -38,7 +38,8 @@ import * as CustomEditor from 'ckeditor5-build-classic/build/ckeditor';
 export class AppComponent implements OnInit {
   public editor;
   public config = {
-    fileStackApiKey: 'A78e38y7HQUG5OYrs7rDTz'
+    fileStackApiKey: 'YOUR_API_KEY',
+    uploadPath: 'path/to/upload/folder',
   };
 
   ngOnInit(): void {
