@@ -44,10 +44,10 @@ export default class MediaBrowserCommand extends Command {
                     }), editor.model.document.selection);
                 },
                 fromSources: ['local_file_system'],
-                // storeTo: {
-                //     location: 's3',
-                //     path: uploadPath,
-                // }
+                storeTo: {
+                    location: 's3',
+                    path: uploadPath,
+                }
                 // accept: ['video/*'],
             };
 
